@@ -16,19 +16,17 @@ const Navbar = () => {
     <div className="mt-6 bg-slate-700 bg-opacity-50 py-2 px-4">
       <div className="md:hidden flex justify-end">
         <button
-          className="border-2 border-slate-400 rounded-md px-2 text-lg"
+          className="border-2 border-slate-400 rounded-md px-2 text-lg active:text-blue-500 active:border-blue-500"
           onClick={() => {
             setCollapse(!collapse)
           }}
         >
           <span className="inline-block font-bold mr-2">MENU</span>
-          <FontAwesomeIcon icon={faBars} />
+          <FontAwesomeIcon size="sm" icon={faBars} />
         </button>
       </div>
-      <nav>
-        <ul
-          className={clsx("flex flex-col items-end md:flex-row md:justify-center md:gap-6", collapse && "hidden")}
-        >
+      <nav className={clsx(collapse && "hidden", "md:block")}>
+        <ul className="flex flex-col items-end md:flex-row md:justify-center md:gap-6">
           <li>
             <Navlink to="/work" icon={faBriefcase}>
               Work
