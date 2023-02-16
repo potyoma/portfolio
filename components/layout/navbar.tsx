@@ -25,11 +25,13 @@ const Navbar = () => (
             Contact
           </Navlink>
         </li>
-        <li>
+        {/* Removed temporarily */}
+        {/* TODO: Add blog parsing */}
+        {/* <li>
           <Navlink to="/blog" icon={faPenToSquare}>
             Blog
           </Navlink>
-        </li>
+        </li> */}
       </ul>
     </nav>
   </div>
