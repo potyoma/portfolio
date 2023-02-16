@@ -1,3 +1,9 @@
+import {
+  faAddressCard,
+  faBriefcase,
+  faCircleQuestion,
+  faPenToSquare,
+} from "@fortawesome/free-solid-svg-icons"
 import Navlink from "./navlink"
 
 const Navbar = () => (
@@ -5,16 +11,24 @@ const Navbar = () => (
     <nav>
       <ul className="flex justify-center gap-6">
         <li>
-          <Navlink to="/work">Work</Navlink>
+          <Navlink to="/work" icon={faBriefcase}>
+            Work
+          </Navlink>
         </li>
         <li>
-          <Navlink to="/about">About</Navlink>
+          <Navlink to="/about" icon={faCircleQuestion}>
+            About
+          </Navlink>
         </li>
         <li>
-          <Navlink to="/contact">Contact</Navlink>
+          <Navlink to="/contact" icon={faAddressCard}>
+            Contact
+          </Navlink>
         </li>
         <li>
-          <Navlink to="/blog">Blog</Navlink>
+          <Navlink to="/blog" icon={faPenToSquare}>
+            Blog
+          </Navlink>
         </li>
       </ul>
     </nav>
