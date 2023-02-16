@@ -7,11 +7,9 @@ type Props = {
 }
 
 const Layout: React.FC<Props> = ({ children }) => (
-  <div className="bg-slate-800 w-screen h-screen text-white">
-    <div className="fixed w-screen">
-      <Header />
-      <Navbar />
-    </div>
+  <div className="bg-slate-800 text-white">
+    <Header />
+    <Navbar />
     <div>{children}</div>
     <Footer />
   </div>
