@@ -1,4 +1,8 @@
-import { faGithub, faTelegram } from "@fortawesome/free-brands-svg-icons"
+import {
+  faGithub,
+  faTelegram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import SocialLink from "./socialLink"
 
@@ -15,6 +19,12 @@ const Footer = () => (
         <SocialLink
           to="mailto:artyomnovosyolov254@gmail.com"
           icon={faEnvelope}
+        />
+      </li>
+      <li>
+        <SocialLink
+          to="https://linkedin.com/in/potyoma"
+          icon={faLinkedin}
         />
       </li>
     </ul>
