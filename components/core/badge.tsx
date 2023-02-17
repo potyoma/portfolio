@@ -2,7 +2,7 @@ import clsx from "clsx"
 
 type Props = {
   children: string | JSX.Element | JSX.Element[]
-  outline: boolean
+  outline?: boolean
 }
 
 const Badge: React.FC<Props> = ({ children, outline }) => (
