@@ -45,19 +45,22 @@ const projects: Project[] = [
 ]
 
 const Work = () => (
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 content-center  gap-5 p-8">
-    {projects.map(p => (
-      <ProjectCard
-        key={p.name}
-        name={p.name}
-        githubLink={`https://github.com/potyoma/${p.githubName}`}
-        projectLink={p.projectLink}
-        preview={p.preview}
-        techStack={p.techStack}
-      >
-        <p>{p.description}</p>
-      </ProjectCard>
-    ))}
+  <div>
+    <h1 className="text-center mt-6 font-bold text-5xl">Projects</h1>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 content-center  gap-5 p-8">
+      {projects.map(p => (
+        <ProjectCard
+          key={p.name}
+          name={p.name}
+          githubLink={`https://github.com/potyoma/${p.githubName}`}
+          projectLink={p.projectLink}
+          preview={p.preview}
+          techStack={p.techStack}
+        >
+          <p>{p.description}</p>
+        </ProjectCard>
+      ))}
+    </div>
   </div>
 )
 
