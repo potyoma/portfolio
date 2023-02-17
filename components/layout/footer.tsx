@@ -17,7 +17,7 @@ const Footer = () => (
       </li>
       <li>
         <SocialLink
-          to="mailto:artyomnovosyolov254@gmail.com"
+          to="mailto:artemnovoselov.contact@gmail.com"
           icon={faEnvelope}
         />
       </li>

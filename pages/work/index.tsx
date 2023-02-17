@@ -38,7 +38,7 @@ const projects: Project[] = [
     name: "Quotes",
     projectLink: "https://random-quote-generator-mocha-seven.vercel.app/",
     githubName: "random-quote-generator",
-    description: "Just a calculator app running on web technologies",
+    description: "An app to generate random quotes",
     preview: "/img/quotes.png",
     techStack: ["TypeScript", "React", "Bootstrap"],
   },
