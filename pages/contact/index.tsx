@@ -22,12 +22,12 @@ const contacts = [
 
 const Contact = () => (
   <div
-    className="mt-6 mb-auto flex justify-center items-center"
-    style={{ height: "75vh" }}
+    className="mb-auto flex justify-center items-center"
+    style={{ height: "77vh" }}
   >
-    <div className="grid border border-slate-200 rounded-lg">
+    <div className="grid border border-slate-200 rounded-lg mx-2">
       {contacts.map(({ icon, link, description }) => (
-        <div key={description} className="my-6 px-4 flex">
+        <div key={description} className="my-6 px-2 md:px-4 flex">
           <ContactWithIcon icon={icon} link={link}>
             {description}
           </ContactWithIcon>
