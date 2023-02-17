@@ -43,6 +43,7 @@ const About = () => (
             { name: "Node.js", special: false },
             { name: "Fastify", special: false },
             { name: "Supabase", special: false },
+            { name: "Figma", special: false },
           ].map(tech => (
             <Badge key={tech.name} outline={tech.special}>
               {tech.name}
