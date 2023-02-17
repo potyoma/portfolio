@@ -12,7 +12,13 @@ const About = () => (
           "My name is Artem and I am the software developer you have been looking for.",
         ]}
       >
-        <p>have to come up with something</p>
+        <p>
+          I am a web developer. The most of my experience is <b>C#</b> backend
+          and frontend with <b>React</b> UI. But i don’t think that technology
+          define my capabilities. I <b>learn fast</b> and tend to find the best
+          fitting solution for a task.
+        </p>
+        <p>Open to relocation, remote, fulltime and project jobs.</p>
       </ImageWithDesc>
       <ImageWithDesc
         src="/img/clouds.webp"
@@ -28,6 +34,7 @@ const About = () => (
             { name: "SQL", special: true },
             { name: "PostgreSQL", special: false },
             { name: "Kafka", special: false },
+            { name: "Redux", special: false },
             { name: "Kubernetes", special: false },
             { name: "HTML | CSS", special: true },
             { name: "JS | TS", special: true },
@@ -35,6 +42,7 @@ const About = () => (
             { name: "Bootstrap", special: false },
             { name: "Node.js", special: false },
             { name: "Fastify", special: false },
+            { name: "Supabase", special: false },
           ].map(tech => (
             <Badge key={tech.name} outline={tech.special}>
               {tech.name}
