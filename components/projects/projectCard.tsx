@@ -22,7 +22,7 @@ const ProjectCard: React.FC<Props> = ({
   name,
 }) => (
   <div className="grid grid-rows-6 rounded-lg border border-blue-100 p-5 hover:shadow-xl hover:shadow-slate-900">
-    <div className="row-span-3 relative">
+    <div className="row-span-4 relative">
       <div className="flex absolute z-10 -top-2 -right-2 justify-end gap-2">
         <LinkBadge icon={faArrowUpRightFromSquare} to={projectLink} />
         <LinkBadge icon={faGithub} to={githubLink} />
@@ -34,14 +34,18 @@ const ProjectCard: React.FC<Props> = ({
         fill
       />
     </div>
-    <div className="row-span-1 mt-2">
-      <h2 className="font-bold text-xl">{name}</h2>
-    </div>
-    <div className="row-span-1">{children}</div>
-    <div className="row-span-1 flex flex-grow gap-2 justify-start">
-      {techStack.map(t => (
-        <Badge key={t}>{t}</Badge>
-      ))}
+    <div className="row-span-2">
+      <div className="mt-2">
+        <h2 className="font-bold text-xl">{name}</h2>
+      </div>
+      <div className="mt-2">{children}</div>
+      <div className="mt-3">
+        <div className="flex flex-grow flex-wrap gap-2 justify-start">
+          {techStack.map(t => (
+            <Badge key={t}>{t}</Badge>
+          ))}
+        </div>
+      </div>
     </div>
   </div>
 )
