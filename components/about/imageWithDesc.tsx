@@ -4,15 +4,15 @@ type Props = {
   position?: "left" | "right"
   src: string
   headers: string[]
-  description: string
   alt: string
+  children: string | JSX.Element | JSX.Element[]
 }
 
 const ImageWithDesc: React.FC<Props> = ({
   src,
   alt,
   position = "left",
-  description,
+  children,
   headers,
 }) => (
   <div className="grid grid-cols-6 p-6 items-center">
@@ -28,7 +28,7 @@ const ImageWithDesc: React.FC<Props> = ({
           {text}
         </h2>
       ))}
-      <p>{description}</p>
+      {children}
     </div>
     {position === "right" && (
       <div className="relative h-40 md:h-80 col-span-2">
