@@ -1,7 +1,7 @@
 import { PropsWithChildren, ReactNode } from "react";
 
 type ResumeBlockProps<T> = PropsWithChildren & {
-  id: string;
+  id?: string;
   heading: string;
   items: T[];
   transform: (item: T) => ReactNode;
