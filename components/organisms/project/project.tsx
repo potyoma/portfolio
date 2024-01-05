@@ -15,7 +15,7 @@ export function Project({ project }: ProjectProps) {
   return (
     <div className="flex flex-col gap-8 text-typography max-w-[31rem]">
       <Image
-        className="rounded"
+        className="rounded object-cover h-64 sm:h-80"
         src={image}
         alt={`Project ${name} screenshot`}
         width="500"
@@ -23,7 +23,7 @@ export function Project({ project }: ProjectProps) {
       />
       <div className="flex flex-col gap-3">
         <div className="flex justify-between">
-          <h3>{name}</h3>
+          <h3 className="text-2xl">{name}</h3>
           <div className="flex gap-4">
             {github && (
               <Link target="__blank" external href={github}>

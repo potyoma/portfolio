@@ -4,7 +4,7 @@ import Contact from "@/components/molecules/contact";
 
 export function Contacts() {
   return (
-    <ResumeBlock heading="Contacts">
+    <ResumeBlock id="contact" heading="Contacts">
       <ul className="flex flex-wrap gap-4">
         {CONTACTS.map((c, i) => (
           <li key={i}>
