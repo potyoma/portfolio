@@ -24,9 +24,10 @@ const config: Config = {
         },
         animatebg: {
           "0%": { backgroundPosition: "0% 0%" },
-          "15%": { backgroundPosition: "50% 50%" },
-          "50%": { backgroundPosition: "100% 100%" },
-          "100%": { backgroundPosition: "0% 0%" },
+          "25%": { backgroundPosition: "25% 25%" },
+          "50%": { backgroundPosition: "50% 50%" },
+          "75%": { backgroundPosition: "75% 75%" },
+          "100%": { backgroundPosition: "100% 100%" },
         },
       },
       backgroundSize: {
