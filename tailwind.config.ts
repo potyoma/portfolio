@@ -22,13 +22,20 @@ const config: Config = {
           "50%": { backgroundPosition: "100% 50%" },
           "100%": { backgroundPosition: "0% 50%" },
         },
+        animatebg: {
+          "0%": { backgroundPosition: "0% 0%" },
+          "15%": { backgroundPosition: "50% 50%" },
+          "50%": { backgroundPosition: "100% 100%" },
+          "100%": { backgroundPosition: "0% 0%" },
+        },
       },
       backgroundSize: {
         "300%": "300%",
       },
       animation: {
         gradient: "animatedgradient 3s ease infinite alternate",
-        'spin-slow': 'spin 3s linear infinite',
+        bg: "animatebg 20s linear infinite alternate",
+        "spin-slow": "spin 3s linear infinite",
       },
     },
   },
