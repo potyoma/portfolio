@@ -1,6 +1,8 @@
 import type { Theme } from "../types/theme";
 
 export function getInitialColorMode(): Theme {
+  if (!document) return "dark";
+
   const datasetTheme = document.body.dataset.theme as Theme;
 
   if (!!datasetTheme) return datasetTheme;

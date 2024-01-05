@@ -1,3 +1,4 @@
+import ThemeSwitch from "@/components/molecules/theme-switch";
 import { LINKS } from "@/data/header";
 import Link from "next/link";
 
@@ -16,6 +17,9 @@ export function Header() {
               </Link>
             </li>
           ))}
+          <li>
+            <ThemeSwitch />
+          </li>
         </ul>
       </nav>
     </header>
