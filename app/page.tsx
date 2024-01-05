@@ -3,6 +3,7 @@ import Projects from "@/components/organisms/projects";
 import Resume from "@/components/organisms/resume";
 import Image from "next/image";
 import { Education } from "../components/organisms/education/education";
+import Contacts from "@/components/organisms/contacts";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Projects />
       <Resume />
       <Education />
+      <Contacts />
     </div>
   );
 }

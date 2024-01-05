@@ -3,8 +3,8 @@ import { PropsWithChildren, ReactNode } from "react";
 type ResumeBlockProps<T> = PropsWithChildren & {
   id?: string;
   heading: string;
-  items: T[];
-  transform: (item: T) => ReactNode;
+  items?: T[];
+  transform?: (item: T) => ReactNode;
 };
 
 export function ResumeBlock<T>({
@@ -12,6 +12,7 @@ export function ResumeBlock<T>({
   heading,
   items,
   transform,
+  children,
 }: ResumeBlockProps<T>) {
   return (
     <div
@@ -19,11 +20,15 @@ export function ResumeBlock<T>({
       id={id}
     >
       <h2 className="uppercase text-lg">{heading}</h2>
-      <ul className="sm:col-span-4 flex flex-col gap-6">
-        {items.map((item, i) => (
-          <li key={i}>{transform(item)}</li>
-        ))}
-      </ul>
+      {items && transform ? (
+        <ul className="sm:col-span-4 flex flex-col gap-6">
+          {items.map((item, i) => (
+            <li key={i}>{transform(item)}</li>
+          ))}
+        </ul>
+      ) : (
+        <div className="sm:col-span-4">{children}</div>
+      )}
     </div>
   );
 }
