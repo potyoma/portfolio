@@ -21,6 +21,7 @@ export function Project({ project }: ProjectProps) {
         alt={`Project ${name} screenshot`}
         width="500"
         height="350"
+        loading="eager"
       />
       <div className="flex flex-col gap-3">
         <div className="flex justify-between">
