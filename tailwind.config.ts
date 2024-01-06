@@ -24,9 +24,7 @@ const config: Config = {
         },
         animatebg: {
           "0%": { backgroundPosition: "0% 0%" },
-          "25%": { backgroundPosition: "25% 25%" },
           "50%": { backgroundPosition: "50% 50%" },
-          "75%": { backgroundPosition: "75% 75%" },
           "100%": { backgroundPosition: "100% 100%" },
         },
       },
@@ -35,7 +33,7 @@ const config: Config = {
       },
       animation: {
         gradient: "animatedgradient 3s ease infinite alternate",
-        bg: "animatebg 20s linear infinite alternate",
+        bg: "animatebg 60s linear infinite alternate",
         "spin-slow": "spin 3s linear infinite",
       },
     },
