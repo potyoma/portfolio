@@ -12,8 +12,14 @@ export function ThemeSwitch() {
 
   const icon = theme === "dark" ? faSun : faMoon;
 
+  const label = `Switch to ${theme === "light" ? "dark" : "light"} theme`;
+
   return (
-    <Button onClick={toggle} className="group hover:animate-spin-slow">
+    <Button
+      onClick={toggle}
+      aria-label={label}
+      className="group hover:animate-spin-slow"
+    >
       <FontAwesomeIcon
         className={clsx(
           `text-typography transition-colors`,
