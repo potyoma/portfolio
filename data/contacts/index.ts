@@ -3,7 +3,7 @@ import { Contact } from "@/lib/types/contact";
 export const CONTACTS: Contact[] = [
   {
     icon: "email",
-    link: "mailto:artyomnovosyolov254@gmail.com",
+    link: "mailto:contact@potyoma.xyz",
     name: "Send an email",
   },
   {

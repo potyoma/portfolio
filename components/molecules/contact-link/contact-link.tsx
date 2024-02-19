@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export function ContactLink() {
   return (
     <Link
-      href="mailto:artyomnovosyolov254@gmail.com"
+      href="mailto:contact@potyoma.xyz"
       className="group flex items-center gap-2"
       external
     >
