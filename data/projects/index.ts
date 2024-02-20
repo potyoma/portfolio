@@ -5,7 +5,7 @@ export const PROJECTS: Project[] = [
     name: "Image Keeper",
     description: "The app allows you to upload and view saved images.",
     github: "https://github.com/potyoma/image-uploader",
-    demo: "https://image-keeper.up.railway.app/",
+    demo: "https://image-uploader-fe.onrender.com/",
     tech: [
       "Node.js",
       "Nest",
