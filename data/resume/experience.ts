@@ -2,14 +2,6 @@ import type { Job } from "@/lib/types/job";
 
 export const JOBS: Job[] = [
   {
-    role: "Frontend Developer",
-    company: { name: "Kappa", link: "https://kappa.work" },
-    date: { from: "Oct 2023", to: "Present" },
-    stack: ["JavaScript", "HTML/CSS", "Lit", "React", "11ty", "Next.js"],
-    points: [],
-  },
-
-  {
     role: "Frontend Mentor",
     company: { name: "html academy", link: "https://htmlacademy.org/" },
     date: { from: "Jun 2023", to: "Present" },
